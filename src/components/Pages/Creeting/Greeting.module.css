@@ -1,0 +1,17 @@
+.main {
+  height: 100vh;
+}
+
+.greeting {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 0 auto ;
+}

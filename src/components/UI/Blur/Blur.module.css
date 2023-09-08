@@ -1,0 +1,9 @@
+.blur {
+  position: absolute;
+  min-height: 100vh;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+}

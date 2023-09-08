@@ -1,0 +1,9 @@
+.stars-container {
+  display: inline-flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+
+.yellow {
+  color: yellow;
+}

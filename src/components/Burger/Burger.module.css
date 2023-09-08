@@ -1,0 +1,47 @@
+.burger {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  row-gap: 10px;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: right 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.burger:hover > * {
+  background-color: red;
+}
+
+.lineOne,
+.lineTwo,
+.lineThree {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.lineOne {
+  width: 75%;
+  height: 2px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.lineTwo {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.lineThree {
+  width: 50%;
+  height: 2px;
+  background: #fff;
+  border-radius: 20px;
+}

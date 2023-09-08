@@ -1,0 +1,31 @@
+.info {
+  height: 100%;
+  margin: 8rem 0 2rem 0;
+  padding: 1rem;
+  width: 100% ;
+  border-radius: 20px;
+  max-height: calc(100vh - 14rem);
+  flex-grow: 1;
+  position: relative;
+  z-index: 10;
+  overflow-y: auto;
+  color: #fff;
+  font-size: calc(1rem + 2vh);
+  line-height: 120%;
+}
+
+.paragraph {
+  display: block;
+  max-width: 80%;
+}
+
+.regards {
+  display: block;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .info {
+    font-size: 1.5rem;
+  }
+}

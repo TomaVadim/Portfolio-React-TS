@@ -1,0 +1,31 @@
+.greetingTitles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 10%;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .greetingTitles {
+    padding-top: 30%;
+  }
+}
+
+.title {
+  color: #21f8f6;
+  text-shadow: 1px 1px 10px #21f8f6;
+  font-size: calc(1.75rem + 10vh);
+}
+
+.subtitle {
+  color: #21f8f6;
+  font-size: calc(1rem + 1.25vh);
+}
+
+.profesion {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: calc(1rem + 1.5vh);
+}
