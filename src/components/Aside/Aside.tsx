@@ -1,4 +1,4 @@
-import { FC, useRef } from 'react';
+import { FC, useContext, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { Link } from 'react-router-dom';
@@ -11,16 +11,13 @@ import 'material-symbols';
 
 import style from './Aside.module.css';
 import './aside-transition.css';
+import { Context } from '../../context/context';
 
-interface Props {
-  isOpen: boolean;
-  handleIsOpen: (open: boolean) => void;
-}
-
-export const Aside: FC<Props> = ({ isOpen, handleIsOpen }) => {
+export const Aside: FC = () => {
   const asideRef = useRef(null);
+  const { isOpen, setIsOpen } = useContext(Context);
 
-  useOutsideClick(asideRef, handleIsOpen);
+  useOutsideClick(asideRef, setIsOpen);
 
   return (
     <CSSTransition
@@ -35,7 +32,7 @@ export const Aside: FC<Props> = ({ isOpen, handleIsOpen }) => {
             <li
               key={navigator.id}
               className={style.item}
-              onClick={() => handleIsOpen(false)}
+              onClick={() => setIsOpen(false)}
             >
               <Link to={navigator.path}>{navigator.link}</Link>
             </li>
@@ -43,7 +40,7 @@ export const Aside: FC<Props> = ({ isOpen, handleIsOpen }) => {
           <Social />
         </ul>
         <span
-          onClick={() => handleIsOpen(false)}
+          onClick={() => setIsOpen(false)}
           className='material-symbols-outlined close'
         >
           close
