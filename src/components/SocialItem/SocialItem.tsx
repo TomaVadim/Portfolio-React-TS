@@ -8,7 +8,7 @@ interface SocialItemProps {
 export const SocialItem: FC<SocialItemProps> = ({ image, link }) => {
   return (
     <li>
-      <a href={link}>
+      <a href={link} target="_blank">
         <img src={image} alt={image} />
       </a>
     </li>

@@ -1,10 +1,10 @@
 import { FC } from 'react';
 
-import { Background } from '../../UI/Background/Background';
-import { Social } from '../../Social/Social';
-import { GreetingTitles } from '../../GreetingTitles/GreetingTitles';
+import { Background } from '../../components/UI/Background/Background';
+import { Social } from '../../components/Social/Social';
+import { GreetingTitles } from '../../components/GreetingTitles/GreetingTitles';
 
-import { BACKGROUND } from '../../../constants/constants';
+import { BACKGROUND } from '../../constants/constants';
 
 import style from './Greeting.module.css';
 

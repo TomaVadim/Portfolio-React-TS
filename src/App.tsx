@@ -1,13 +1,9 @@
 import { FC } from 'react';
 
-import './App.module.css';
-import { Routing } from './components/Router/Routing';
+import { Routing } from './router/Routing';
 
+import './App.module.css';
 
 export const App: FC = () => {
-  return (
-    <>
-      <Routing />
-    </>
-  )
+  return <Routing />;
 };

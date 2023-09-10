@@ -2,16 +2,16 @@ import { FC, useState } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Greeting } from '../Pages/Creeting/Greeting';
-import { Burger } from '../Burger/Burger';
-import Portal from '../Potral/Portal';
-import { Aside } from '../Aside/Aside';
+import { Greeting } from '../pages/Creeting/Creeting';
+import { Burger } from '../components/Burger/Burger';
+import Portal from '../components/Potral/Portal';
+import { Aside } from '../components/Aside/Aside';
 
 import style from './Routing.module.css';
-import { Skills } from '../Pages/Skills/Skills';
-import { About } from '../Pages/About/About';
-import { Expereince } from '../Pages/Expereince/Expereince';
-import { Portfolio } from '../Pages/Portfolio/Portfolio';
+import { Skills } from '../pages/Skills/Skills';
+import { About } from '../pages/About/About';
+import { Expereince } from '../pages/Expereince/Expereince';
+import { Portfolio } from '../pages/Portfolio/Portfolio';
 
 export const Routing: FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);

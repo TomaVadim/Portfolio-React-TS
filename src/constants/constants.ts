@@ -15,10 +15,10 @@ import {
 export { BACKGROUND, AVATAR };
 
 export const SOCIAL: Social[] = [
-  { image: linkedIn, link: '#somehref1' },
-  { image: instagram, link: '#somehref2' },
-  { image: telegram, link: '#somehref3' },
-  { image: github, link: '#somehref4' },
+  { image: linkedIn, link: 'https://www.linkedin.com/in/vadim-toma-046925247' },
+  { image: instagram, link: 'https://instagram.com/_vadim_toma_?igshid=OGQ5ZDc2ODk2ZA==' },
+  { image: telegram, link: 'https://t.me/vadimtoma' },
+  { image: github, link: 'https://github.com/TomaVadim' },
 ];
 
 export const SKILLS: Skills[] = [
@@ -28,12 +28,9 @@ export const SKILLS: Skills[] = [
   { id: 4, skill: 'JavaScript', countFill: 7, countOutlined: 3 },
   { id: 5, skill: 'TypeScript', countFill: 7, countOutlined: 3 },
   { id: 6, skill: 'React', countFill: 9, countOutlined: 1 },
-  { id: 7, skill: 'React Router Dom', countFill: 7, countOutlined: 3 },
-  { id: 8, skill: 'React Hooks Form', countFill: 7, countOutlined: 3 },
-  { id: 9, skill: 'TypeScript', countFill: 9, countOutlined: 1 },
-  { id: 10, skill: 'TypeScript', countFill: 7, countOutlined: 3 },
-  { id: 11, skill: 'TypeScript', countFill: 7, countOutlined: 3 },
-  { id: 12, skill: 'TypeScript', countFill: 9, countOutlined: 1 },
+  { id: 7, skill: 'NPM', countFill: 9, countOutlined: 1 },
+  { id: 8, skill: 'GIT', countFill: 7, countOutlined: 3 },
+  { id: 9, skill: 'Vite', countFill: 7, countOutlined: 3 },
 ];
 
 export const NAVIGATION: Navigation[] = [
@@ -46,6 +43,4 @@ export const NAVIGATION: Navigation[] = [
 
 export const EXPEREINCE: Expereince[] = [
   { id: 1, position: 'Freelance', period: 'more than 6 month' },
-  { id: 2, position: 'Freelance', period: 'more than 6 month' },
-  { id: 3, position: 'Freelance', period: 'more than 6 month' },
 ];

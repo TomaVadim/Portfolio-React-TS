@@ -55,3 +55,33 @@
     font-size: 1.5rem;
   }
 }
+
+.aside-enter {
+  top: 0;
+  left: -110%;
+}
+
+.aside-enter-done {
+  top: 0;
+  left: 0;
+}
+
+.aside-exit {
+  top: 0;
+  left: 0;
+}
+
+.aside-exit-done {
+  top: 0;
+  left: -110%;
+}
+
+.close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 40px !important;
+  color: #fff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
