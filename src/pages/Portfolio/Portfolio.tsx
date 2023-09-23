@@ -1,18 +1,21 @@
 import { FC } from 'react';
-import { Section } from '../../components/UI/Section/Section';
-import { Social } from '../../components/Social/Social';
-import { Background } from '../../components/UI/Background/Background';
-import { BACKGROUND } from '../../constants/constants';
-import { Slider } from '../../components/UI/Slider/Slider';
+import {
+  BACKGROUND,
+  Background,
+  SOCIAL,
+  Section,
+  Slider,
+} from '../../features';
+import { SocialList } from '../../components/SocialList/SocialList';
 
-export const Portfolio:FC = () => {
+export const Portfolio: FC = () => {
   return (
     <>
-        <Section>
-      <Slider />
-      <Social />
-      <Background background={BACKGROUND} />
-    </Section>
+      <Section>
+        <Slider />
+        <SocialList list={SOCIAL} />
+        <Background background={BACKGROUND} />
+      </Section>
     </>
   );
 };

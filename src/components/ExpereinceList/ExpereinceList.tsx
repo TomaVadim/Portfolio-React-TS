@@ -1,20 +1,20 @@
 import { FC } from 'react';
 
-import { EXPEREINCE } from '../../constants/constants';
-
 import style from './ExpereinceList.module.css';
+import { Expereince } from '../../features';
 
-export const ExpereinceList: FC = () => {
+type Props = {
+  list: Expereince[];
+};
+
+export const ExpereinceList: FC<Props> = ({ list }) => {
   return (
     <ul className={style.list}>
-      {EXPEREINCE.map(({ id, position, period }) => (
-        <li key={id} className={style.position}>
-          <span >
-            {position}
-          </span> 
-          <span className={style.period}>
-            {period}
-          </span>
+      {list.map(({ id, work, position, period }) => (
+        <li key={id} className={style.work}>
+          <span>{work}</span>
+          <span className={style.position}>{position}</span>
+          <span className={style.period}>{period}</span>
         </li>
       ))}
     </ul>

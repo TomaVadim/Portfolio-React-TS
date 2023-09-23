@@ -1,14 +1,16 @@
 import { FC } from 'react';
 
-import { Stars } from '../UI/Stars/Stars';
-import { SKILLS } from '../../constants/constants';
-
 import style from './SkillsList.module.css';
+import { Skills, Stars } from '../../features';
 
-export const SkillsList: FC = () => {
+type Props = {
+  list: Skills[];
+};
+
+export const SkillsList: FC<Props> = ({ list }) => {
   return (
     <ul className={style.list}>
-      {SKILLS.map(({ id, skill, countFill, countOutlined }) => (
+      {list.map(({ id, skill, countFill, countOutlined }) => (
         <li key={id} className={style.skill}>
           {skill}
           <Stars countFill={countFill} countOutlined={countOutlined} />

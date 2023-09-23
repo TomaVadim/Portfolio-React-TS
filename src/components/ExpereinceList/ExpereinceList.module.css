@@ -17,7 +17,7 @@
   display: none;
  }
 
-.position {
+.work {
   padding: 1rem 10rem;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,13 @@
   box-shadow: 2px 2px 10px #21f8f6;  
 }
 
+.position {
+  color: #ccc;
+  font-size: 1rem;  
+}
+
 .period {
+  margin-top: 10px;
   color: #ccc;
   font-size: 1rem;
 }

@@ -2,7 +2,7 @@ import { FC, ReactElement } from 'react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { Greeting } from '../pages/Creeting/Creeting';
+import { Greeting } from '../pages/Greeting/Greeting';
 import { Skills } from '../pages/Skills/Skills';
 import { About } from '../pages/About/About';
 import { Expereince } from '../pages/Expereince/Expereince';

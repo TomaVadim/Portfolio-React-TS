@@ -2,18 +2,21 @@ import { FC, useContext, useRef } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { Link } from 'react-router-dom';
-import { Social } from '../Social/Social';
 
-import useOutsideClick from '../../hooks/useOutsideClick';
-import { NAVIGATION } from '../../constants/constants';
+import { useOutsideClick } from '../../features';
 
 import 'material-symbols';
 
 import style from './Aside.module.css';
 import './aside-transition.css';
-import { Context } from '../../context/context';
+import { Context, Navigation, SOCIAL } from '../../features';
+import { SocialList } from '../SocialList/SocialList';
 
-export const Aside: FC = () => {
+type Props = {
+  list: Navigation[];
+};
+
+export const Aside: FC<Props> = ({ list }) => {
   const asideRef = useRef(null);
   const { isOpen, setIsOpen } = useContext(Context);
 
@@ -28,7 +31,7 @@ export const Aside: FC = () => {
     >
       <aside className={style.aside} ref={asideRef}>
         <ul className={style.list}>
-          {NAVIGATION.map((navigator) => (
+          {list.map((navigator) => (
             <li
               key={navigator.id}
               className={style.item}
@@ -37,7 +40,7 @@ export const Aside: FC = () => {
               <Link to={navigator.path}>{navigator.link}</Link>
             </li>
           ))}
-          <Social />
+          <SocialList list={SOCIAL} />
         </ul>
         <span
           onClick={() => setIsOpen(false)}

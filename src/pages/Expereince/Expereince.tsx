@@ -1,18 +1,20 @@
 import { FC } from 'react';
-
-import { Social } from '../../components/Social/Social';
-import { Background } from '../../components/UI/Background/Background';
-import { Blur } from '../../components/UI/Blur/Blur';
-import { Section } from '../../components/UI/Section/Section';
-
-import { BACKGROUND } from '../../constants/constants';
+import {
+  BACKGROUND,
+  Background,
+  Blur,
+  EXPEREINCE,
+  SOCIAL,
+  Section,
+} from '../../features';
 import { ExpereinceList } from '../../components/ExpereinceList/ExpereinceList';
+import { SocialList } from '../../components/SocialList/SocialList';
 
 export const Expereince: FC = () => {
   return (
     <Section>
-      <ExpereinceList />
-      <Social />
+      <ExpereinceList list={EXPEREINCE} />
+      <SocialList list={SOCIAL} />
       <Background background={BACKGROUND} />
       <Blur />
     </Section>
